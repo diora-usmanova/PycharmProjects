@@ -1,0 +1,35 @@
+import turtle
+radius = eval(input("Enter a radius( 80 is perfect )"))
+turtle.pensize(5)
+turtle.hideturtle()
+
+turtle.penup()
+turtle.goto(-200, 50)
+turtle.color("blue")
+turtle.pendown()
+turtle.circle(radius)
+
+turtle.penup()
+turtle.goto(-30, 50)
+turtle.color("black")
+turtle.pendown()
+turtle.circle(radius)
+
+turtle.penup()
+turtle.goto(140, 50)
+turtle.color("yellow")
+turtle.pendown()
+turtle.circle(radius)
+
+turtle.penup()
+turtle.goto(-110, -30)
+turtle.color("red")
+turtle.pendown()
+turtle.circle(radius)
+
+turtle.penup()
+turtle.goto(70, -30)
+turtle.color("green")
+turtle.pendown()
+turtle.circle(radius)
+turtle.done()

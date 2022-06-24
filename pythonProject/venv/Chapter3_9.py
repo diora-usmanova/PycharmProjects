@@ -1,0 +1,16 @@
+name = input("Enter eemployee's name: ")
+hoursWorked = eval(input("Enter a number of hours worked in a week: "))
+payRate = eval(input("Enter hourly pay rate: "))
+federalTax = eval(input("Enter federal tax withholding rate: "))
+statetax = eval(input("Enter state tax withholding rate: "))
+print("Employee name : ", name)
+print("Hours worked : ",hoursWorked)
+print("Pay Rate : ", "$",payRate)
+print("Gross Pay : ", "$",hoursWorked* payRate)
+print("Deductions : ")
+print("     Federal Withholding (20%) : ","$",  (hoursWorked * payRate* federalTax))
+print("     State Withholding (9%) : ", "$", (hoursWorked * payRate * statetax))
+print("     Total deductions : ","$", (hoursWorked * payRate* federalTax)+ \
+            + (hoursWorked * payRate * statetax))
+print("Net Pay: ","$",hoursWorked * payRate-( (hoursWorked * payRate* federalTax)+ \
+                  +(hoursWorked * payRate * statetax)),".2f")
